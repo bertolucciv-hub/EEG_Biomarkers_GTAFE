@@ -1,0 +1,115 @@
+
+/* EEG_Biomarkers v4.3 | Polimento editorial e adaptação de conteúdo */
+:root{--book-width:1500px;--body-leading:1.78;--meta-green:#126c58}
+html{scroll-padding-top:calc(var(--nav-height,58px) + 65px)}
+.app-layout{display:block!important;max-width:none!important}
+.app-layout>.main{min-width:0;width:100%;margin:0}
+.reading-progress{left:0!important;width:100%!important}
+.book-section{padding-block:clamp(48px,5vw,82px);padding-inline:clamp(22px,4.5vw,90px)}
+.book-section>.section-heading,.book-section>.opening-board,.book-section>.reading-layout,.book-section>.figure-insights,.book-section>.schema-block,.book-section>.widget,.book-section>.chapter-footer,.book-section>.chapter-rationale{max-width:var(--book-width);margin-left:auto;margin-right:auto}
+.content-block{padding-inline:clamp(22px,4.5vw,90px)}
+.content-block>.book-identity,.content-block>.chapters-grid,.content-block>.intro,.content-block>.intro-continuation,.content-block>.editorial-credits,.content-block>.reference-list,.content-block>.reference-note{max-width:var(--book-width)}
+.book-section>.section-heading{margin-bottom:24px}
+.book-section h2,.content-block h2{letter-spacing:-.035em;line-height:1.16;text-wrap:balance}
+.book-section .subtitle{line-height:1.53;margin-top:11px;margin-bottom:0;max-width:70ch}
+.prose{max-width:75ch;font-size:clamp(1rem,.32vw + .96rem,1.075rem);line-height:var(--body-leading);overflow-wrap:break-word}
+.prose p{margin-bottom:1.13em;hyphens:auto}
+.prose h3{font-size:clamp(1.24rem,.48vw + 1.15rem,1.51rem);line-height:1.29;letter-spacing:-.02em;margin:1.55em 0 .58em}
+.prose h3:first-of-type{margin-top:.55em}
+.critical{margin-top:22px;padding:16px 18px}
+.chapter-sources{font-size:.84rem;line-height:1.65}
+/* Gallery + scientific illustrations: content-sized cards and equal visual rhythm */
+.opening-board{padding:clamp(14px,1.75vw,22px)!important;margin-top:21px!important;margin-bottom:30px!important;border-radius:21px}
+.opening-board-head{gap:14px;margin-bottom:13px}
+.opening-board-grid{grid-template-columns:minmax(0,1.22fr) minmax(295px,.78fr)!important;gap:clamp(12px,1.8vw,22px)!important;align-items:center!important}
+.opening-board-media{align-self:center;border-radius:15px;overflow:hidden;line-height:0}
+.opening-board-media .image-open{display:block;line-height:0}
+.opening-board-media picture,.opening-board-media img{display:block;width:100%;height:auto}
+.opening-board-side{display:flex!important;flex-direction:column!important;align-self:center!important;justify-content:center!important;gap:12px!important;height:auto!important;grid-template-rows:none!important}
+.side-mini-card,.schema-box{height:auto!important;min-height:0!important;display:block!important;flex:none!important;padding:clamp(14px,1.45vw,19px)!important}
+.side-mini-card h4,.schema-box h4{font-size:clamp(1.04rem,.3vw + 1rem,1.18rem);line-height:1.28;margin:0 0 8px}
+.side-mini-card p,.schema-box p{margin:0!important;line-height:1.62;font-size:.935rem;max-width:66ch}
+.side-mini-card .mini-label{margin-bottom:7px;font-size:.7rem}
+.board-caption{margin-top:12px!important;margin-bottom:0;padding:12px 15px;line-height:1.64}
+.board-caption em{margin-top:5px}
+/* Compact concept cards alongside the vertical 3:4 mechanisms */
+.schema-block{padding:clamp(16px,2.2vw,28px)!important;margin-top:26px!important;margin-bottom:16px!important;border-radius:21px}
+.schema-grid{grid-template-columns:minmax(0,.92fr) minmax(300px,1.08fr)!important;align-items:center!important;gap:clamp(17px,2.5vw,36px)!important}
+.schema-grid .scientific-figure{max-width:495px;margin:0 auto}
+.schema-block .image-open{background:#fff}
+.schema-block .image-open img{width:100%;height:auto;max-height:680px;aspect-ratio:3/4;object-fit:contain}
+.schema-copy{display:flex!important;flex-direction:column!important;justify-content:center!important;gap:14px!important;height:auto!important;grid-template-rows:none!important;align-self:center!important}
+.schema-copy .schema-box{border-radius:15px}
+.schema-head{margin-bottom:19px}
+.schema-head h3,.insights-head h3{font-size:clamp(1.36rem,1.5vw,1.72rem);line-height:1.23}
+.schema-head p,.insights-head p{max-width:84ch;line-height:1.68}
+/* Scientific figure close reading */
+.figure-insights{padding:clamp(16px,2vw,26px)!important;margin-top:27px!important;margin-bottom:15px!important;border-radius:21px}
+.insights-head{margin-bottom:17px}
+.insights-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:clamp(13px,1.5vw,20px)!important;align-items:stretch}
+.detail-card{height:auto!important;min-width:0;border-radius:15px;display:flex!important;flex-direction:column!important;overflow:hidden}
+.detail-card button{width:100%;line-height:0;display:block}
+.detail-card img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.detail-card-copy{display:block!important;padding:16px clamp(14px,1.35vw,19px) 18px!important;flex:1}
+.detail-card h4{margin:0 0 7px;font-size:1.1rem;line-height:1.35}
+.detail-card p{font-size:.94rem;line-height:1.67;margin:0!important}
+.detail-kicker{font-size:.69rem;margin:0 0 6px}
+.scientific-figure figcaption,.architecture-figure figcaption{font-size:clamp(.83rem,.35vw + .78rem,.96rem);line-height:1.7}
+/* Consistent interaction and readable focus */
+.chapter-card,.side-mini-card,.schema-box,.detail-card{transition:border-color .18s ease,box-shadow .18s ease}
+.chapter-card:focus-visible,.image-open:focus-visible,.detail-open:focus-visible,.global-nav-control:focus-visible,.rail-link:focus-visible{outline:3px solid #bb9b43;outline-offset:3px}
+.chapter-card:hover,.detail-card:hover{box-shadow:0 9px 26px rgba(15,54,50,.08)}
+.chapters-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,255px),1fr));gap:clamp(13px,1.5vw,20px)}
+.chapter-card-copy{padding:17px}
+.chapter-card h3{font-size:1.15rem;line-height:1.28}
+.chapter-card p{line-height:1.58}
+/* Banner image content: center the GTAFE emblem vertically */
+.brand-banner{height:clamp(175px,16vw,246px)!important}
+.brand-banner .banner-photo{object-position:center center!important}
+/* Horizontal table-of-contents remains the sole chapter navigation */
+.global-nav{z-index:100}
+.chapter-rail-scroll{scroll-padding-inline:12px}
+#chapterRail[hidden]{display:none!important}
+#chapterRail .rail-link{min-height:42px}
+/* Smooth progression through the academic narrative */
+.chapter-footer{margin-top:36px!important;gap:13px}
+.chapter-footer a{min-height:41px;display:inline-flex;align-items:center;justify-content:center}
+@media (min-width:1600px){
+ .book-section{padding-inline:max(5vw,calc((100vw - var(--book-width))/2))}
+}
+@media (max-width:1100px){
+ .opening-board-grid,.schema-grid{grid-template-columns:1fr!important}
+ .opening-board-media{max-width:950px;margin-inline:auto}
+ .opening-board-side{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:13px!important;width:100%}
+ .schema-copy{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:13px!important;width:100%}
+ .schema-grid .scientific-figure{max-width:480px;margin-inline:auto}
+ .reading-layout{grid-template-columns:1fr!important}
+}
+@media (max-width:760px){
+ .book-section{padding-inline:clamp(17px,4.3vw,30px);padding-block:clamp(42px,6vw,58px)}
+ .content-block{padding-inline:clamp(17px,4.3vw,30px)}
+ .brand-banner{height:clamp(155px,28vw,198px)!important}
+ .brand-banner .banner-photo{object-position:center center!important}
+ .opening-board,.schema-block,.figure-insights{border-radius:16px;padding:14px!important}
+ .opening-board-side,.schema-copy{grid-template-columns:1fr!important;gap:10px!important}
+ .side-mini-card,.schema-box{padding:14px 15px!important}
+ .detail-card{display:grid!important;grid-template-columns:minmax(120px,39%) minmax(0,1fr)!important}
+ .detail-card button{height:100%}
+ .detail-card img{height:100%;aspect-ratio:auto;object-fit:cover;min-height:140px}
+ .detail-card-copy{padding:13px!important}
+ .prose{line-height:1.75}
+ .prose h3{margin-top:1.35em}
+ .chapter-footer a{padding-inline:10px;font-size:.82rem}
+}
+@media (max-width:460px){
+ .detail-card{display:flex!important;flex-direction:column!important}
+ .detail-card img{height:auto;aspect-ratio:16/9;min-height:0}
+ .brand-banner{height:153px!important}
+ .viewer-header{gap:4px}
+ .chapter-rail-scroll{gap:7px}
+}
+@media (prefers-reduced-motion:reduce){.detail-card,.side-mini-card,.schema-box{transition:none}}
+@media print{.opening-board,.schema-block,.figure-insights{box-shadow:none!important}.brand-banner{height:140px!important}}
+
+/* On narrow screens, preserve the entire right-hand GTAFE emblem in the banner crop. */
+@media (max-width:760px){.brand-banner .banner-photo{object-position:right center!important}}
